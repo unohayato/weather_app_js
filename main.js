@@ -11,7 +11,6 @@ const options = {
 };
 
 request(options, (error, res, body) => {
-  console.log(body.main.temp);
+  console.log(`現在の${argment}の気温は${body.main.temp}度です。`);
 });
 
-console.log(process.argv[2]);

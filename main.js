@@ -8,5 +8,5 @@ const options = {
 };
 
 request(options, (error, res, body) => {
-  console.log(body);
+  console.log(body.main.temp);
 });
